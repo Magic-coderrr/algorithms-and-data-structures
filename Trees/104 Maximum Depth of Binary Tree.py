@@ -18,8 +18,8 @@ class Solution(object):
         """
         if root is None:
             return 0
-        lft+=self.maxDepth(root.left)
-        rght+=self.maxDepth(root.right)
+        lft=self.maxDepth(root.left)
+        rght=self.maxDepth(root.right)
         max_height=max(lft,rght)+1
         return max_height
         
